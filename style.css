@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('bg.jpg');
+  background-size: cover;
+}
+
+.console {
+  width: 500px;
+  height: 300px;
+  background-color: #000;
+  border-style: ridge;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.bar {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5174ba+0,001a61+100 */
+  background: #5174ba; /* Old browsers */
+  background: -moz-linear-gradient(left, #5174ba 0%, #001a61 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #5174ba 0%,#001a61 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #5174ba 0%,#001a61 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5174ba', endColorstr='#001a61',GradientType=1 ); /* IE6-9 */
+  border-bottom-style: ridge;
+}
+/* FiX FlExBoX */
+.blank {
+  flex-grow: 1;
+}
+.title {
+  font-family: 'Consolas';
+  color: white;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.icon {
+  width: 4%;
+  margin-right: 5px;
+  margin-left: 3px;
+}
+
+.icon img {
+  display: block;
+  width: 100%;
+}
+
+.buttons {
+  flex-basis: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-right: 3px;
+}
+
+.button {
+  height: 14px;
+  width: 14px;
+  text-align: center;
+  font-weight: bold;
+  background-color: lightgrey;
+}
+
+.button:nth-child(1) {
+  line-height: 10px;
+}
+
+.button:nth-child(2) {
+  line-height: 16px;
+}
+
+.button:nth-child(3) {
+  line-height: 17px;
+  font-size: 18px;
+}
+
+.print {
+  font-family: 'Consolas';
+  width: 100%;
+  flex-basis: 100%;
+  margin: 0;
+  color: white;
+  font-size: 12px;
+}
+
+.taskbar {
+  width: 100vw;
+  height: 35px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-image: url('taskbarbg.png');
+  background-repeat: repeat-x;
+}
+
+.start {
+  font-size: 25px;
+  color: white;
+  line-height: 35px;
+  background-color: rgb(78, 152, 75);
+  width: 110px;
+  padding-left: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
